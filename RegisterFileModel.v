@@ -26,7 +26,7 @@ module REGFILE (
             REG[0] <= 32'b0;REG[1] <= 32'b0;REG[2] <= 32'b0;REG[3] <= 32'b0;
             REG[4] <= 32'b0;REG[5] <= 32'b0;REG[6] <= 32'b0;REG[7] <= 32'b0;
             REG[8] <= 32'b0;REG[9] <= 32'b0;REG[10] <= 32'b0;REG[11] <= 32'b0;
-            REG[12] <= 32'b0;REG[13] <= 32'b0;REG[14] <= 32'b0;
+            REG[12] <= 32'b0;REG[13] <= 32'h00010000;REG[14] <= 32'b0;
         end
         else begin // Synchronous write (1 cycle => 2 writes)
             if (WEN1)    REG[WA1] <= DI1;
