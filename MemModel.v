@@ -17,12 +17,12 @@ module SRAM (
 );
 	
 	// ROMDATA = initial memory data
-	// parameter ROMDATA = "test.hex";
-	parameter ROMDATA = "ALU_TEST_inst.hex";
+	parameter ROMDATA = "test.hex";
+	// parameter ROMDATA = "ALU_TEST_inst.hex";
 	
 	// MEMDATA = additional file for ALU_TEST (can be ignored)
-  	// parameter MEMDATA = "data.hex";
-  	parameter MEMDATA = "ALU_TEST_data.hex";
+  	parameter MEMDATA = "data.hex";
+  	// parameter MEMDATA = "ALU_TEST_data.hex";
 
 
 	reg	[31:0]		outline1, outline2;
