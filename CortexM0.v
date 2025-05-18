@@ -345,8 +345,8 @@ module CortexM0 (
   /* ==================== Pipeline registers updates ==================== */
   initial begin
     NUM_INST <= 0;
-    // PC <= 32'h000000d0;
-    PC <= 32'b0;
+    PC <= 32'h000000d0;
+    // PC <= 32'b0;
   end
 
   always @(negedge CLK) begin
